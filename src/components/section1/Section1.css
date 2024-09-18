@@ -3,8 +3,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    width: 134vh;
-    height: 60vh;
+    width: 95%;
+    height: 90vh;
     margin: 10px;
     border-radius: 20px;
 }
@@ -20,7 +20,7 @@ img{
     height: 10vh;
     background-color: transparent;
 }
-.Teste{
+.FundoFosco{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,8 @@ img{
     text-align: center;
     top: 0;
     left: 0;
-    width: 134vh;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
     pointer-events: none;
 }

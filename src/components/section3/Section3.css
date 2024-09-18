@@ -1,5 +1,34 @@
 .Container3{
-    background-color: blueviolet;
+    background-image: url(../../assets/CarroFundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 95%;
+    height: 90vh;
+    margin: 10px;
+    border-radius: 20px;
+}
+.FundoFosco{
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    text-align: start;
+    justify-content: start;
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    pointer-events: none;
+}
+.FundoFosco h3{
+    background-color: transparent;
+    color: white;
+    font-size:3em;
+    padding: 60px;
+}
+.FundoFosco p {
+    background-color: transparent;
+    width: 400px;
+    padding-left: 60px;
+    color: white;
+    font-size: 1.3em;
 }
