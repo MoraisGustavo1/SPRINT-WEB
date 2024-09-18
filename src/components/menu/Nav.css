@@ -1,0 +1,31 @@
+.Menu {
+    display: flex;
+    justify-content: end;
+}
+button{
+    padding: 20px;
+    margin: 20px;
+    position: fixed;
+    background-color: transparent;
+}
+
+.menu-card {
+    position: fixed;
+    background-color: rgb(69, 19, 3);
+    list-style-type: none;
+    padding: 10px;
+    height: 40vh;
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card li {
+    margin-bottom: 10px;
+}
+
+.menu-card a {
+    text-decoration: none;
+    color: black;
+}

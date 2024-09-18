@@ -1,0 +1,35 @@
+.Container1{
+    background-image: url(https://static.wixstatic.com/media/5f09b5_ce590a8095b04fc1ba61cabe42263464~mv2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 134vh;
+    height: 60vh;
+   margin: 10px;
+}
+h1{
+
+    background-color: transparent;
+    color: white;
+    font-size: 3.2em;
+    padding: 60px;
+    width: 800px;
+}
+img{
+    height: 10vh;
+    background-color: transparent;
+    padding-left: 300px;
+}
+.Teste{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 134vh;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    pointer-events: none;
+}
