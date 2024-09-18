@@ -5,7 +5,8 @@
     background-size: cover; 
     width: 134vh;
     height: 60vh;
-   margin: 10px;
+    margin: 10px;
+    border-radius: 20px;
 }
 h1{
 
@@ -18,9 +19,9 @@ h1{
 img{
     height: 10vh;
     background-color: transparent;
-    padding-left: 300px;
 }
 .Teste{
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
