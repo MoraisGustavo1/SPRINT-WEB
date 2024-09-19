@@ -16,10 +16,7 @@
     font-size: 3em;
     width: 800px;
 }
-img{
-    height: 10vh;
-    background-color: transparent;
-}
+
 .FundoFosco{
     border-radius: 20px;
     display: flex;

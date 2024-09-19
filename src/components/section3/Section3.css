@@ -23,7 +23,7 @@
 .Fundo h3{
     background-color: transparent;
     color: white;
-    font-size:3em;
+    font-size:4em;
     padding: 60px;
 }
 .Fundo p {
@@ -31,5 +31,5 @@
     width: 400px;
     padding-left: 60px;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }

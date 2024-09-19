@@ -16,17 +16,20 @@
 }
 .Textos {
     color: white;
-    align-self: flex-start;
+    align-self: center;
     text-align: start;
-    padding-left: 230px;
+    padding-left: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Textos p{
     width: 400px;
-    font-size: 1.2em;
-   padding-top: 50px;
+    font-size: 1.7em;
+    padding-top: 50px;
 }
 .Textos h3{
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 30px;
 }
 
