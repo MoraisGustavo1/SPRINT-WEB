@@ -1,34 +1,56 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import Linkedin from '../../assets/linkedin-icone.png';
+import TT from '../../assets/tt-icone.png';
+import Face from '../../assets/face-icone.png';
+import You from '../../assets/youtube-icone.png';
+import X from '../../assets/x.png';
 
 function Nav() {
     const [showMenu, setShowMenu] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
+    const [closing, setClosing] = useState(false);
 
-    // Alterna o estado de exibição do menu
     const toggleMenu = () => {
-        setShowMenu(prevState => !prevState);
-    }
-
-    // Fecha o menu
-    const closeMenu = () => {
-        setShowMenu(false);
-    }
+        if (menuVisible) {
+            setClosing(true);
+            setTimeout(() => {
+                setShowMenu(false);
+                setClosing(false);
+                setMenuVisible(false);
+            }, 300);
+        } else {
+            setShowMenu(true);
+            setTimeout(() => {
+                setMenuVisible(true);
+            }, 30); 
+        }
+    };
 
     return (
         <>
             <nav className='Menu'>
-                <button onClick={toggleMenu}>Menu</button>
-                {showMenu && ( // Exibe o menu apenas se showMenu for verdadeiro
-                    <ul className="menu-card">
-                        <li><Link to="/section1">Link 1</Link></li>
-                        <li><Link to="/section2">Link 2</Link></li>
-                        <li><Link to="/section3">Link 3</Link></li>
-                        <li><Link to="/section4">Link 4</Link></li>
-                        <li><Link to="/section5">Link 5</Link></li>
-                        {/* Botão para fechar o menu */}
-                        <button onClick={closeMenu} className="close-menu">Fechar</button>
-                    </ul>
+                <button onClick={toggleMenu} className='open-menu'>Menu</button>
+                {showMenu && (
+                    <div className={`menu-card ${menuVisible ? 'show' : ''} ${closing ? 'hide' : ''}`}>
+                        <ul>
+                            <li><Link to="/section1">Link 1</Link></li>
+                            <li><Link to="/section2">Link 2</Link></li>
+                            <li><Link to="/section3">Link 3</Link></li>
+                            <li><Link to="/section4">Link 4</Link></li>
+                            <li><Link to="/section5">Link 5</Link></li>
+                        </ul>
+                        <div className='redes'>
+                            <img src={Linkedin} alt="LinkedIn" />
+                            <img src={TT} alt="Twitter" />
+                            <img src={Face} alt="Facebook" />
+                            <img src={You} alt="YouTube" />
+                        </div>
+                        <button onClick={toggleMenu} className="close-menu">
+                            <img src={X} alt="Fechar" />
+                        </button>
+                    </div>
                 )}
             </nav>
         </>

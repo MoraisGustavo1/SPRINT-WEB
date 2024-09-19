@@ -2,9 +2,9 @@
     display: flex;
     justify-content: end;
 }
-button{
+.open-menu{
     padding: 20px;
-    margin: 20px;
+    margin: 90px;
     position: fixed;
     background-color: white;
     border-radius: 20px;
@@ -13,21 +13,54 @@ button{
 
 .menu-card {
     position: fixed;
-    background-color: rgb(69, 19, 3);
-    list-style-type: none;
-    padding: 10px;
-    height: 40vh;
+    background-color: gray;
+    padding: 30px;
+    height: 100vh;
     width: 700px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out; 
+}
+.menu-card.show {
+    transform: translateX(0); 
 }
 
-.menu-card li {
-    margin-bottom: 10px;
+.menu-card.hide {
+    transform: translateX(100%); 
 }
+.close-menu{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    align-self: end;
+    text-align: end;
+    position: fixed;
+}
+.close-menu img{
+    height: 5vh;
+}
+.menu-card  ul li {
+    margin-bottom: 10px;
+    font-size: 2em;
+    list-style-type: none;
+    padding: 30px;
+}
+
 
 .menu-card a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+}
+.redes{
+    padding: 20px;
+}
+.redes img{
+    height: 3vh;
+    width: 50px;
 }

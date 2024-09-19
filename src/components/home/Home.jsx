@@ -4,6 +4,7 @@ import Section3 from "../section3/Section3"
 import Section4 from "../section4/Section4"
 import Section5 from "../section5/Section5"
 import './Home.css'
+
 function Home (){
     return(
         <>
