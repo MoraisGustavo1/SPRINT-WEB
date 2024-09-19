@@ -1,5 +1,32 @@
 .Container4{
-    background-color: green;
-    width: 100%;
-    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    background-color: #5478BB;
+    width: 95%;
+    height: 90vh;
+    margin: 10px;
+    border-radius: 20px;
+    
 }
+.Sec4Img img{
+    height: 90vh;
+    width: 140%;
+    border-radius: 20px; 
+}
+.Textos {
+    color: white;
+    align-self: flex-start;
+    text-align: start;
+    padding-left: 230px;
+}
+.Textos p{
+    width: 400px;
+    font-size: 1.2em;
+   padding-top: 50px;
+}
+.Textos h3{
+    font-size: 3em;
+    padding-top: 30px;
+}
+
