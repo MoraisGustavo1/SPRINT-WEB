@@ -1,0 +1,33 @@
+.AllCards{
+    background-color: #5478BB;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    background-color: #5478BB;
+    width: 95%;
+    height: 90vh;
+    margin: 10px;
+    border-radius: 20px;
+    align-items: center; 
+}
+.Cards{
+    color: white;
+    align-self: flex-start;
+    text-align: start;
+    padding: 50px;
+}
+.Cards p{
+    font-size: 1.2em;
+    
+}
+.Cards h3{
+    font-size: 3em;
+}
+.paragrafo {
+    margin-top: 50px;
+}
+.CardsImg img{
+  height: 80vh;
+  width: 90%;
+  border-radius: 20px;
+}

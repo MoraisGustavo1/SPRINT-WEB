@@ -1,4 +1,8 @@
+import { Outlet } from 'react-router-dom'
 import './Section3.css'
+import Card1 from './cards/Card1'
+import Card2 from './cards/Card2'
+import Card3 from './cards/Card3'
 function Section3 () {
     return(
         <>
@@ -10,6 +14,12 @@ function Section3 () {
             
             </div>
         </div>
+        <Outlet/>
+        <Card1/>
+        <Card2/>
+        <Card3/>
+
+
         </>
     )
 }
