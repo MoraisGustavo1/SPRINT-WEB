@@ -19,8 +19,6 @@ function Home (){
             <Section4/>
             <br />
             <Section5/>
-            <br />
-            <Footer/>
         </div>
         </>
     )
