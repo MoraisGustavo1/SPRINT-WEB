@@ -1,7 +1,113 @@
-.Container5{
+
+.race-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     background-color: #5478BB;
     width: 95%;
     height: 90vh;
     margin: 10px;
     border-radius: 20px;
+  }
+.tittle{
+    color: white;
+    font-size: 3em;
+    position:absolute;
+    top: 5%;
 }
+  .card {
+    position: absolute;
+    width: 350px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+  }
+ 
+  .card-1 {
+    top: 40px;
+    left: 3%;
+    background-image: url('../../assets/avpaulista.png');
+  }
+
+
+  .card-2 {
+    top: 405px;
+    right: 28%;
+    background-image: url('../../assets/jeddah.png');
+  }
+
+
+  .card-3 {
+    top: 40px;
+    right: 3%;
+    background-image: url('../../assets/jeddah.png');
+  }
+
+
+  .card-4 {
+    top: 405px;
+    left: 28%;
+    background-image: url('../../assets/mexico.png');
+  }
+
+
+  .card-text {
+    z-index: 1;
+    font-size: 1.3rem;
+  }
+
+  .card h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .card p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  
+  .button-container {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .button {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
