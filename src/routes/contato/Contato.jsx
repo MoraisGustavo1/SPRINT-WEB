@@ -11,8 +11,8 @@ function Contato() {
     // Verifica se o formulário é válido
     if (form.checkValidity()) {
       Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
+        title: "Enviado!",
+        text: "Obrigado, entraremos em contato",
         icon: "success"
       });
     } else {
