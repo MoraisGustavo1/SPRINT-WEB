@@ -1,0 +1,45 @@
+.Corridas{
+    background-color: #5478BB;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    align-items: start; 
+}
+.TittleCorridas{
+    padding: 30px;
+}
+.ProxCards img{
+    height: 200px;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.CardCorridas{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.ProxCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+.ProxCards h3{
+    font-size: 1.5em;
+    color: #3B3A3A;
+}
+.ProxCards button{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.ProxCards button:hover{
+    background-color: #cfcfcf;
+}
