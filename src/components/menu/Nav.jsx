@@ -35,8 +35,8 @@ function Nav() {
                 {showMenu && (
                     <div className={`menu-card ${menuVisible ? 'show' : ''} ${closing ? 'hide' : ''}`}>
                         <ul>
-                            <li><Link to="/">Link 1</Link></li>
-                            <li><Link to="/contato">Link 2</Link></li>
+                            <li><Link to="/">HOME</Link></li>
+                            <li><Link to="/contato">CONTATO</Link></li>
                             <li><Link to="/section3">Link 3</Link></li>
                             <li><Link to="/section4">Link 4</Link></li>
                             <li><Link to="/section5">Link 5</Link></li>
