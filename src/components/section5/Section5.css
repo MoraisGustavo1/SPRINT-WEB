@@ -1,7 +1,7 @@
 
 .race-section {
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -9,66 +9,81 @@
     width: 95%;
     height: 90vh;
     margin: 10px;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
   }
 .tittle{
     color: white;
     font-size: 3em;
-    position:absolute;
     top: 5%;
-}
-  .card {
-    position: absolute;
-    width: 350px;
-    height: 460px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-    
+    border-bottom: 1px solid;
   }
-  .card:hover {
+  .card-corrida {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    flex-wrap: nowrap;
+  }
+  .card-1:hover {
     transform: scale(1.1); /* Aumenta o tamanho do card */
   }
- 
+  .card-2:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+  }
+  .card-3:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+  }
+  .card-4:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+  }
   .card-1 {
-    top: 40px;
-    left: 3%;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     background-image: url('../../assets/avpaulista.png');
+    border-radius: 20px;
   }
 
 
   .card-2 {
-    top: 405px;
-    right: 28%;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     background-image: url('../../assets/jeddah.png');
+    border-radius: 20px;
   }
 
 
   .card-3 {
-    top: 40px;
-    right: 3%;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     background-image: url('../../assets/jeddah.png');
+    border-radius: 20px;
   }
 
 
   .card-4 {
-    top: 405px;
-    left: 28%;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     background-image: url('../../assets/mexico.png');
+    border-radius: 20px;
   }
 
 
   .card-text {
     z-index: 1;
     font-size: 1.3rem;
+    padding: 10px;
   }
 
   .card h2 {
@@ -83,7 +98,6 @@
 
   .card::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -94,14 +108,13 @@
 
   
   .button-container {
-    position: absolute;
     bottom: 40px;
     right: 40px;
   }
 
   .button {
     border: 2px solid white;
-    border-radius: 50%;
+    border-radius: 10%;
     padding: 20px;
     font-size: 1rem;
     color: white;
@@ -116,3 +129,12 @@
   .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+.fundo{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 20px;
+}

@@ -4,6 +4,7 @@
     margin: 10px;
     border-radius: 20px;
     align-items: start;
+    color: white;
 }
 
 .TittleCorridas {
@@ -35,7 +36,6 @@
 
 .ProxCards h3 {
     font-size: 1.5em;
-    color: #3B3A3A;
 }
 
 .ProxCards button {

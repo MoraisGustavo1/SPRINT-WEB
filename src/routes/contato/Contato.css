@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    
+    color: white;
 }
 
 h1 {
@@ -21,7 +21,6 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    color: #3B3A3A;
 }
 
 .text-ctt p {

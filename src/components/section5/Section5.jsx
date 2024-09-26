@@ -6,34 +6,46 @@ function Section5 (){
         <>
         <section className="race-section">
             <div className='tittle'><h3>Proximas corridas</h3></div>
-            <div className="card card-1">
-                <div className="card-text">
-                    <h2>01</h2>
-                    <p>São Paulo, Brasil</p>
+            <div className='card-corrida'>
+                <div className="card-1">
+                    <div className='fundo'>
+                        <div className="card-text">
+                            
+                                <h2>01</h2>
+                                <p>São Paulo, Brasil</p>
+                        </div>
+                    </div>
                 </div>
+                <div className="card-2">
+                    <div className='fundo'>
+                        <div className="card-text">
+                            <h2>03</h2>
+                            <p>Jeddah, Arabia Saudita</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="card card-2">
-                <div className="card-text">
-                    <h2>03</h2>
-                    <p>Jeddah, Arabia Saudita</p>
+                <div className="card-3">
+                    <div className='fundo'>
+                        <div className="card-text">
+                            <h2>04</h2>
+                            <p>Jeddah, Arabia Saudita</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div className="card card-3">
-                <div className="card-text">
-                    <h2>04</h2>
-                    <p>Jeddah, Arabia Saudita</p>
-                </div>
-                </div>
-                <div className="card card-4">
-                <div className="card-text">
-                    <h2>02</h2>
-                    <p>México City, México</p>
-                </div>
+                <div className="card-4">
+                    <div className='fundo'>
+                        <div className="card-text">
+                            <h2>02</h2>
+                            <p>México City, México</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="button-container">
-                <div className="button"><Link to='./corridas'><p>Ver Calendário</p></Link></div>
+                
             </div>
+                <div className="button-container">
+                    <div className="button"><Link to='./corridas'><p>Ver Calendário</p></Link></div>
+                </div>
         </section>
         </>
     )
