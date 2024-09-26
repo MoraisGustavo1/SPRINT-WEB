@@ -1,35 +1,71 @@
-.Container4{
+.Container4 {
     display: grid;
     grid-template-columns: 1fr 2fr; 
-    gap: 20px; 
+    gap: 20px;
     background-color: #5478BB;
     width: 95%;
-    height: 90vh;
+    height: auto; /* Ajustar a altura para 'auto' para melhor responsividade */
     margin: 10px;
     border-radius: 20px;
-    
 }
-.Sec4Img img{
-    height: 90vh;
-    width: 140%;
-    border-radius: 20px; 
+
+.Sec4Img img {
+    height: 80vh; /* Ajustar a altura para menor que a do container para evitar overflow */
+    width: 100%; /* Ajustar a largura para não ultrapassar a do container */
+    border-radius: 20px;
 }
+
 .Textos {
     color: white;
     align-self: center;
     text-align: start;
-    padding-left: 270px;
+    padding-left: 50px; /* Reduzir o padding esquerdo para adequar em telas menores */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.Textos p{
-    width: 400px;
+
+.Textos p {
+    width: 100%; /* Ajustar a largura para 100% para melhor fluidez em diferentes tamanhos de tela */
     font-size: 1.7em;
     padding-top: 50px;
 }
-.Textos h3{
-    font-size: 4em;
+
+.Textos h3 {
+    font-size: 3em; /* Reduzir o tamanho da fonte para adaptação em telas menores */
     padding-top: 30px;
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .Container4 {
+        grid-template-columns: 1fr; /* Coloca tudo em uma coluna sobre a outra */
+    }
+
+    .Sec4Img img {
+        width: 100%; /* Ajustar a imagem para preencher a largura disponível */
+        height: auto; /* Ajustar a altura para 'auto' */
+    }
+
+    .Textos {
+        padding-left: 20px; /* Reduzir o padding esquerdo para melhor visualização */
+    }
+
+    .Textos h3, .Textos p {
+        font-size: 2em; /* Reduzir o tamanho das fontes para adaptar ao espaço disponível */
+    }
+}
+
+@media (max-width: 768px) {
+    .Textos {
+        padding-left: 10px; /* Reduzir ainda mais o padding esquerdo */
+    }
+
+    .Textos h3 {
+        font-size: 1.5em; /* Reduzir mais o tamanho do título */
+    }
+
+    .Textos p {
+        font-size: 1.2em; /* Reduzir o tamanho do texto do parágrafo */
+    }
+}
