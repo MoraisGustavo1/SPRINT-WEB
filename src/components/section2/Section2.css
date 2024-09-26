@@ -1,19 +1,18 @@
 .container2 {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     background-color: #5478BB;
     width: 95%;
-    height: 90vh;
+    height: auto; /* Mudei para auto para ajustar a altura automaticamente */
     margin: 10px;
     border-radius: 20px;
-    align-items: start; 
-    
+    align-items: start;
 }
 
 .text-section {
     color: white;
     background-color: transparent;
-    width: 650px;
+    width: 100%; /* Ajuste a largura para 100% */
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -21,14 +20,14 @@
 
 .text-section h1 {
     font-size: 3em;
-    padding: 70px;
+    padding: 60px; /* Reduzi o padding */
 }
 
 .text-section p {
-    padding: 70px;
-    margin-top: 60px;
-    font-size: 1.8em;
-    line-height: 1.5;
+    padding: 60px; /* Reduzi o padding */
+    margin-top: 60px; /* Reduzi o espaçamento superior */
+    font-size: 1.8em; /* Reduzi o tamanho da fonte */
+    line-height: 1.4;
     font-weight: 800;
     background-color: transparent;
 }
@@ -38,13 +37,68 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    height: 80vh;
-    width: 98%;
+    height: auto; /* Deixe a altura automática para se ajustar ao conteúdo */
+    width: 100%; /* Certifique-se de que a imagem ocupa 100% da largura disponível */
     align-self: center;
+    padding: 20px;
 }
 
 .image-section img {
-    width: 100%; 
-    height: 100%;
-    border-radius: 10px; 
+    width: 100%; /* Imagem ajustada para 100% da largura */
+    height: auto; /* Altura automática */
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+/* RESPONSIVIDADE: Ajuste para telas menores */
+@media (max-width: 768px) {
+    .container2 {
+        grid-template-columns: 1fr; /* Em telas pequenas, as colunas serão empilhadas */
+        height: auto; /* Permitir altura automática para evitar overflow */
+    }
+
+    .text-section {
+        width: 100%; /* Deixar a largura ocupar 100% do espaço disponível */
+    }
+
+    .image-section {
+        height: auto; /* Ajustar a altura da imagem */
+        width: 100%; /* Garantir que a imagem ocupe 100% em telas pequenas */
+    }
+
+    .text-section h1 {
+        font-size: 2em; /* Diminuir o tamanho da fonte em telas menores */
+        padding: 15px; /* Reduzir o padding para otimizar o espaço */
+    }
+
+    .text-section p {
+        padding: 15px; /* Reduzir o padding para otimizar o espaço */
+        font-size: 1.2em; /* Diminuir o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 1025px) {
+    .container2 {
+        grid-template-columns: 1fr; /* Em telas pequenas, as colunas serão empilhadas */
+        height: auto; /* Permitir altura automática para evitar overflow */
+    }
+
+    .text-section {
+        width: 100%; /* Deixar a largura ocupar 100% do espaço disponível */
+    }
+
+    .image-section {
+        height: auto; /* Ajustar a altura da imagem */
+        width: 100%; /* Garantir que a imagem ocupe 100% em telas pequenas */
+    }
+
+    .text-section h1 {
+        font-size: 2em; /* Diminuir o tamanho da fonte em telas menores */
+        padding: 15px; /* Reduzir o padding para otimizar o espaço */
+    }
+
+    .text-section p {
+        padding: 15px; /* Reduzir o padding para otimizar o espaço */
+        font-size: 1.2em; /* Diminuir o tamanho da fonte em telas menores */
+    }
 }

@@ -1,25 +1,29 @@
-.Corridas{
+.Corridas {
     background-color: #5478BB;
     height: 100%;
     margin: 10px;
     border-radius: 20px;
-    align-items: start; 
+    align-items: start;
 }
-.TittleCorridas{
+
+.TittleCorridas {
     padding: 30px;
 }
-.ProxCards img{
+
+.ProxCards img {
     height: 200px;
     width: 20%;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.CardCorridas{
+
+.CardCorridas {
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
-.ProxCards{
+
+.ProxCards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,11 +32,13 @@
     width: 100%;
     border-bottom: 1px solid;
 }
-.ProxCards h3{
+
+.ProxCards h3 {
     font-size: 1.5em;
     color: #3B3A3A;
 }
-.ProxCards button{
+
+.ProxCards button {
     padding: 20px;
     color: rgb(0, 0, 0);
     border-radius: 20px;
@@ -40,6 +46,57 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
-.ProxCards button:hover{
+
+.ProxCards button:hover {
     background-color: #cfcfcf;
+}
+
+/* RESPONSIVIDADE */
+
+/* Dispositivos Médios (Tablets) */
+@media (max-width: 768px) {
+    .ProxCards {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 20px;
+    }
+
+    .ProxCards img {
+        width: 40%; /* Aumenta a largura da imagem para ocupar mais espaço */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .ProxCards h3 {
+        font-size: 1.3em;
+        margin-top: 10px; /* Adiciona espaço entre os elementos */
+    }
+
+    .ProxCards button {
+        padding: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* Dispositivos Pequenos (Telefones) */
+@media (max-width: 480px) {
+    .ProxCards {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ProxCards img {
+        width: 80%; /* Faz a imagem ocupar uma parte maior da tela */
+        height: auto; /* Deixa a altura responsiva */
+        margin-bottom: 15px; /* Adiciona espaço abaixo da imagem */
+    }
+
+    .ProxCards h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .ProxCards button {
+        padding: 10px;
+        font-size: 0.9em; /* Reduz o tamanho do texto do botão */
+        margin-top: 10px;
+    }
 }

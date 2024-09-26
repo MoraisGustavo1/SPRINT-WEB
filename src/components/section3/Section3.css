@@ -1,4 +1,4 @@
-.Container3{
+.Container3 {
     background-image: url(../../assets/CarroFundo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,8 @@
     margin: 10px;
     border-radius: 20px;
 }
-.Fundo{
+
+.Fundo {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -20,16 +21,45 @@
     background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
     pointer-events: none;
 }
-.Fundo h3{
+
+.Fundo h3 {
     background-color: transparent;
     color: white;
-    font-size:4em;
+    font-size: 4em;
     padding: 60px;
 }
+
 .Fundo p {
     background-color: transparent;
     width: 400px;
     padding-left: 60px;
     color: white;
     font-size: 1.8em;
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 1024px) {
+    .Fundo h3 {
+        font-size: 3em; /* Reduz o tamanho do título em telas menores */
+        padding: 40px;  /* Reduz o padding em telas menores */
+    }
+
+    .Fundo p {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do parágrafo */
+        width: 90%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+        padding-left: 40px; /* Reduz o padding lateral */
+    }
+}
+
+@media (max-width: 480px) {
+    .Fundo h3 {
+        font-size: 2em; /* Reduz o tamanho do título para dispositivos muito pequenos */
+        padding: 20px;  /* Reduz o padding */
+    }
+
+    .Fundo p {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do parágrafo */
+        width: 100%; /* Ocupa a largura total da tela */
+        padding-left: 20px; /* Reduz o padding lateral */
+    }
 }
