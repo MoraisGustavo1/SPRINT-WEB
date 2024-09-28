@@ -1,0 +1,79 @@
+.Tudo{
+    background-image: url('../../assets/carroF.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 20px;
+}
+.Login{
+   
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+.ImgLogin {
+    width: 400px;
+    height: 400px;
+}
+.CardLogin{
+    background-color: rgb(71, 113, 190, 0.95);
+    padding: 20px;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius:20px ;
+}
+.login-form{
+    padding-top: 20%;
+
+}
+.w-input{
+    padding: 10px;
+}
+.w-input input{
+    background-color: #96b2e4;
+    color: black;
+    font-weight: bold;
+}
+.w-input input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+.login-form-btn{
+    padding: 10px;
+    background-color: #96b2e4;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+.uteis{
+    padding: 30px;
+    list-style: none;
+}
+.uteis a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hlogo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    background-color: #5478BB;
+    transform: scale(); /* Sem escala definida */
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    position: relative;
+    left: -2.09rem;
+}

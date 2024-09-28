@@ -1,5 +1,6 @@
 import './Footer.css'
 import Simbolo from '../../assets/simbolo-e.png'
+import { Link } from 'react-router-dom'
 function Footer(){
     return(
     <>
@@ -9,17 +10,15 @@ function Footer(){
         </div>
         <div className='menu-footer'>
             <ul>
-                <li>Link1</li>
-                <li>Link2</li>
-                <li>Link3</li>
-                <li>Link4</li>
-                <li>Link5</li>
+                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/contato">CONTATO</Link></li>
+                <li><Link to="/corridas">CORRIDAS</Link></li>
+                <li><Link to="/login">LOGIN</Link></li>
             </ul>
             <ul>
                 <li>X</li>
                 <li>Instagram</li>
                 <li>Facebook</li>
-                <li>Youtube</li>
                 <li>Linkedin</li>
             </ul>
         </div>

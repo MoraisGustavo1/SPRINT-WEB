@@ -34,3 +34,7 @@
 .menu-footer ul li{
     padding: 5px;
 }
+.menu-footer a{
+    text-decoration: none;
+    color: white;
+}
