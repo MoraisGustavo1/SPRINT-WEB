@@ -39,7 +39,6 @@ function Nav() {
                             <li><Link to="/contato">CONTATO</Link></li>
                             <li><Link to="/corridas">CORRIDAS</Link></li>
                             <li><Link to="/login">LOGIN</Link></li>
-                            <li><Link to="/section5">Link 5</Link></li>
                         </ul>
                         <div className='redes'>
                             <img src={Linkedin} alt="LinkedIn" />
